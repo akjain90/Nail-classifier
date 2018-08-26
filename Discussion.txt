@@ -1,0 +1,38 @@
+1). How well does your model perform? How does it compare to the simplest baseline model
+you can think of?
+Response: 
+Model performance is not good. If we increase the number of epochs the model
+will perform very good on training data and is able to achieve an accuracy of approx 1.
+But this is the case of overfitting and shows that once the model is exposed to all the
+training data it learned perticular features available in this data but cannot generallize
+to the new incoming data. 
+	The achieved test accuracy is around 70 percent, where the baseline model will have 50%
+accuracy (Random guess).
+
+2). How many images are required to build an accurate model?
+Response:
+There are multiple ways:
+	a). Collect lot of samples and overfit it to them (and this is the woest way of progressing)
+	b). Use better and deep model (again we need more data with regularization).
+	c). Perform better preprocessing (this way we can reduce the amount of required data).
+	d). Transfer learning with freezing the initial layers (better to visalize loss curve and training curve).
+	
+3). Where do you see the main challenge in building a model like the one we asked here?
+Response:
+There were several challenges:
+	a). Object to be classified is very small and not centered.
+	b). Not a really good contrast between object and the background.
+	c). Lot of empty space.
+	d). on top of all of these not a lot of complex features to learn.
+	
+4). What would you do if you had more time to improve the model?
+Response:
+Following can be done:
+	a). Perform the edge detection and hough transform to properly identify the object.
+	b). After identification crop the unnecessary part while keeping the object in the center.
+	c). Perform thresholding to generate the contrast between the object and background.
+	
+5). What problems might occur if this solution would be deployed to a factory that requires
+automatic nails quality assurance?
+Response:
+Major problems will be related to the uniformity of the new samples. 
