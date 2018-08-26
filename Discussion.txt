@@ -16,7 +16,8 @@ There are multiple ways:
 	b). Use better and deep model (again we need more data with regularization and also more computing power).
 	c). Perform better preprocessing (this way we can reduce the amount of required data).
 	d). Transfer learning with freezing the initial layers (better to visalize loss curve and training curve).
-	e). perform early stopping stopping with more data (I had it implemented but since it was taking too much time to run on my system i had to remove it)
+	e). perform early stopping stopping with more data (I had it implemented but since it was taking too much 
+		time to run on my system i had to remove it)
 	
 3). Where do you see the main challenge in building a model like the one we asked here?
 Response:
